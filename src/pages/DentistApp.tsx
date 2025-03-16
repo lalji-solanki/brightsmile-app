@@ -11,8 +11,6 @@ import AppointmentList from "./AppointmentList";
 import { Slot, Appointment } from "./interfaces/types";
 import HistoryList from "./HistoryList";
 
-const dentist = { id: 1, name: "Dr. Smith", specialization: "General Dentistry" };
-
 const generateSlots = (date: string): Slot[] => {
     const slots: Slot[] = [];
     for (let hour = 9; hour <= 20; hour++) {
