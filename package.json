@@ -15,8 +15,11 @@
     "@mui/x-date-pickers": "^7.27.3",
     "dayjs": "^1.11.13",
     "react": "^19.0.0",
+    "react-datepicker": "^8.2.1",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0"
+    "react-router-dom": "^7.3.0",
+    "react-toastify": "^11.0.5",
+    "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
