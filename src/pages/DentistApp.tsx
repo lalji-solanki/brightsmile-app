@@ -174,8 +174,7 @@ const DentistAppointmentApp: React.FC = () => {
     <div className={`dentist-app ${darkMode ? "dark-mode" : ""}`}>
       <header className="app-header">
         <div className="header-content">
-          <div className="app-title">Dentist Appointment</div>
-          <div className="app-subtitle">Dr. Smith</div>
+          <div className="app-title">Bright Smile</div>
         </div>
         <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}

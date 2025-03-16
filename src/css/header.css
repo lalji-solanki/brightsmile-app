@@ -1,54 +1,60 @@
-/* header.css For DentistApp.tsx header styles*/
+/* header.css */
+
 .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-  }
-  
-  .header-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .app-title {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
-  
-  .app-subtitle {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  .theme-toggle {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .theme-toggle:hover {
-    color: #007bff;
-  }
-  
-  .dark-mode .app-header,
-  .dark-mode .tab-content,
-  .dark-mode .appointment-list li {
-    border-color: #333;
-  }
-  
-  .dark-mode .app-title,
-  .dark-mode .app-subtitle,
-  .dark-mode .theme-toggle {
-    color: white;
-  }
-  
-  .dark-mode .theme-toggle:hover {
-    color: #007bff;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-right: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.app-subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+.theme-toggle {
+  background-color: #ffc107; /* Yellow button */
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+  background-color: #ffca28; /* Slightly darker yellow on hover */
+}
+
+/* Dark mode styles */
+.dark-mode .app-header {
+  background: linear-gradient(135deg, #1a237e, #0d47a1); /* Darker gradient */
+  color: #e0e0e0;
+}
+
+.dark-mode .theme-toggle {
+  background-color: #64b5f6; /* Light blue button */
+  color: white;
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: #42a5f5;
+}

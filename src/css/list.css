@@ -1,6 +1,6 @@
-/* list.css (or create a new reschedule-cancel.css and import it) */
+/* list.css */
 
-.appointment-list ul {
+.appointment-list ul.history-list { /* added .history-list class */
   list-style: none;
   padding: 0;
 }
@@ -21,38 +21,27 @@
   flex-direction: column;
 }
 
-.appointment-list li button {
-  padding: 8px 15px;
-  border: none;
-  cursor: pointer;
+/* Report Generator container styles */
+.report-generator-container {
+  border: 1px solid #ccc; /* Add a border */
+  padding: 15px;
+  margin-bottom: 20px; /* Add spacing */
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin-left: 5px; /* Add some space between buttons */
+  background-color: #f0f0f0;
 }
 
-.reschedule-button {
-  background-color: #007bff; /* Blue for reschedule */
-  color: white;
-}
-
-.reschedule-button:hover {
-  background-color: #0056b3;
-}
-
-.cancel-button {
-  background-color: #dc3545; /* Red for cancel */
-  color: white;
-}
-
-.cancel-button:hover {
-  background-color: #c82333;
-}
-
+/* Dark mode styles */
 .dark-mode .appointment-list li {
   color: white;
+  background-color: #333;
+  border-color: #555;
 }
 
-.dark-mode .reschedule-button,
-.dark-mode .cancel-button {
-  color: white;
+.dark-mode .appointment-list {
+    color: white;
+}
+
+.dark-mode .report-generator-container {
+    background-color: #444;
+    border-color: #666;
 }
