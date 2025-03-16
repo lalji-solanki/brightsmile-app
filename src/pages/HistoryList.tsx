@@ -12,8 +12,10 @@ const HistoryList: React.FC<HistoryListProps> = ({ history }) => {
   return (
     <div className="appointment-list">
       <h2>Appointment History</h2>
-      <ReportGenerator history={history} />
-      <ul>
+      <div className="report-generator-container">
+        <ReportGenerator history={history} />
+      </div>
+      <ul className="history-list">
         {history.map((appointment) => (
           <li key={appointment.id}>
             <div className="appointment-details">

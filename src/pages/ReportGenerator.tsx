@@ -76,33 +76,39 @@ const ReportGenerator: React.FC<ReportGeneratorProps> = ({ history }) => {
   };
 
   return (
-    <div className="report-generator">
-      <div className="report-options">
-        <button
-          className={`report-icon ${exportFormat === 'excel' ? 'selected' : ''}`}
-          onClick={() => setExportFormat('excel')}
-          title="Export as Excel"
-        >
-          <FaFileExcel />
-        </button>
-        <button
-          className={`report-icon ${exportFormat === 'pdf' ? 'selected' : ''}`}
-          onClick={() => setExportFormat('pdf')}
-          title="Export as PDF"
-        >
-          <FaFilePdf />
-        </button>
-      </div>
-      {exportFormat === 'excel' ? (
-        <button className="export-button" onClick={generateExcelReport}>
-          <FaDownload/>
-        </button>
-      ) : (
-        <button className="export-button" onClick={generatePdfReport}>
-          <FaDownload/>
-        </button>
-      )}
+    <div className="flex flex-col items-center p-4">
+    <div className="flex space-x-2 mb-4">
+      <button
+        className={`p-2 rounded-md transition-colors ${
+          exportFormat === 'excel'
+            ? 'bg-blue-500 text-white'
+            : 'bg-gray-200 hover:bg-gray-300'
+        }`}
+        onClick={() => setExportFormat('excel')}
+        title="Export as Excel"
+      >
+        <FaFileExcel className="text-xl" />
+      </button>
+      <button
+        className={`p-2 rounded-md transition-colors ${
+          exportFormat === 'pdf'
+            ? 'bg-blue-500 text-white'
+            : 'bg-gray-200 hover:bg-gray-300'
+        }`}
+        onClick={() => setExportFormat('pdf')}
+        title="Export as PDF"
+      >
+        <FaFilePdf className="text-xl" />
+      </button>
     </div>
+    <button
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center space-x-2"
+      onClick={exportFormat === 'excel' ? generateExcelReport : generatePdfReport}
+    >
+      <FaDownload />
+      <span>Download {exportFormat === 'excel' ? 'Excel' : 'PDF'}</span>
+    </button>
+  </div>
   );
 };
 

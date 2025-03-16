@@ -43,7 +43,15 @@ const BookAppointmentForm: React.FC<BookAppointmentFormProps> = ({
     const { name, value } = event.target;
     if (name === "patientName") setPatientName(value);
     else if (name === "gender") setGender(value);
-    else if (name === "age") setAge(value ? parseInt(value) : undefined);
+    else if (name === "age") {
+      const parsedAge = value ? parseInt(value) : undefined;
+      if (parsedAge === undefined || (parsedAge >= 0 && parsedAge <= 110)) {
+        setAge(parsedAge);
+      } else {
+          setAge(undefined); // Optionally, you could set an error state here.
+          alert("Please enter an age between 0 and 110.");
+      }
+ }
     else if (name === "mobile") {
       if (value.length <= 10) {
         setMobile(value);
@@ -53,6 +61,7 @@ const BookAppointmentForm: React.FC<BookAppointmentFormProps> = ({
 const handleGenderChange = (selectedGender: string) => {
     setGender(selectedGender);
   };
+
   return (
     <div className="booking-form">
       <h2>{isReschedule ? "Reschedule Appointment" : "Book Appointment"}</h2>
@@ -71,7 +80,7 @@ const handleGenderChange = (selectedGender: string) => {
         </div>
         <div className="form-group">
           <label>Age:</label>
-          <input type="number" name="age" value={age || ""} onChange={handleInputChange} />
+          <input type="number" name="age" value={age || ""} onChange={handleInputChange} min="1" max="110" />
         </div>
         <div className="form-group">
           <label>Mobile:</label>

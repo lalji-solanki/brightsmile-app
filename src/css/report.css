@@ -77,4 +77,13 @@
       font-size: 1.3em;
     }
   }
-  
+  /* report.css */
+
+.pdf-report-container {
+  /* Add any styles here that you only want to apply to the PDF */
+  /* For example: */
+  width: 210mm; /* A4 width */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+  box-sizing: border-box;
+}
