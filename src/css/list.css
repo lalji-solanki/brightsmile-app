@@ -1,0 +1,58 @@
+/* list.css (or create a new reschedule-cancel.css and import it) */
+
+.appointment-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appointment-list li {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-list li button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 5px; /* Add some space between buttons */
+}
+
+.reschedule-button {
+  background-color: #007bff; /* Blue for reschedule */
+  color: white;
+}
+
+.reschedule-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: #dc3545; /* Red for cancel */
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.dark-mode .appointment-list li {
+  color: white;
+}
+
+.dark-mode .reschedule-button,
+.dark-mode .cancel-button {
+  color: white;
+}

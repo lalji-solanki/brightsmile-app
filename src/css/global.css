@@ -1,0 +1,21 @@
+/* global.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.dentist-app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: #333;
+  overflow: auto;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}

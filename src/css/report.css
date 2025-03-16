@@ -1,0 +1,80 @@
+/* report.css */
+.report-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add some margin from the top */
+  }
+  
+  .report-options {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .report-icon {
+    padding: 12px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-right: 10px;
+    font-size: 1.8em; /* Increase icon size */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .report-icon:hover {
+    background-color: #e0e0e0;
+    border-color: #b3b3b3;
+  }
+  
+  .report-icon.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .export-button {
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+    display: flex; /* Flexbox for icon and text alignment */
+    align-items: center;
+    justify-content: center;
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .export-button:hover {
+    background-color: #218838;
+  }
+  
+  .export-button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  .export-button svg {
+    margin-right: 10px; /* Add space between icon and text */
+  }
+  
+  /* Adjust for smaller screens if needed */
+  @media (max-width: 600px) {
+    .report-icon {
+      padding: 10px;
+      font-size: 1.5em;
+      margin-right: 8px;
+    }
+  
+    .export-button {
+      padding: 12px 20px;
+      font-size: 1.3em;
+    }
+  }
+  

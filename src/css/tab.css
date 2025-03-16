@@ -1,0 +1,33 @@
+/* tab.css For DentistApp.tsx tab styles */
+.tab-container {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  .tab-container button {
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .tab-container button.active {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  
+  .dark-mode .tab-container button {
+    border-color: #333;
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark-mode .tab-container button.active {
+    background-color: #007bff;
+    border-color: #007bff;
+  }

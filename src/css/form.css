@@ -1,0 +1,148 @@
+/* form.css For BookAppointmentForm.tsx styles*/
+.tab-content {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .booking-form label {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea,
+  .date-picker {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: white !important;
+    font-size: 1em;
+  }
+  
+  .booking-form h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .slot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .slot-button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slot-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .slot-button.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .horizontal-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .horizontal-form .form-group {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .book-button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .book-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .book-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark-mode .tab-content {
+    border-color: #333;
+  }
+  
+  .dark-mode .booking-form label {
+    color: white;
+  }
+  
+  .dark-mode .booking-form input,
+  .dark-mode .booking-form select,
+  .dark-mode .booking-form textarea,
+  .dark-mode .date-picker {
+    color: white;
+    background-color: #333 !important;
+    border-color: #555;
+  }
+  
+  .dark-mode .slot-button {
+    border-color: #555;
+    color: white;
+    background-color: #444;
+  }
+  
+  .dark-mode .slot-button:hover {
+    background-color: #555;
+  }
+  
+  .dark-mode .slot-button.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .dark-mode .book-button {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .book-button:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+  }
+  
+  .dark-mode .book-button:active {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  .form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

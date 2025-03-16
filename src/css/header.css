@@ -1,0 +1,54 @@
+/* header.css For DentistApp.tsx header styles*/
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .app-subtitle {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: #007bff;
+  }
+  
+  .dark-mode .app-header,
+  .dark-mode .tab-content,
+  .dark-mode .appointment-list li {
+    border-color: #333;
+  }
+  
+  .dark-mode .app-title,
+  .dark-mode .app-subtitle,
+  .dark-mode .theme-toggle {
+    color: white;
+  }
+  
+  .dark-mode .theme-toggle:hover {
+    color: #007bff;
+  }
